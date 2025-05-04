@@ -1,12 +1,12 @@
 "use client";
 import React, { useRef, useState, useEffect } from "react";
-import { motion, useScroll, useTransform, useInView } from "framer-motion";
+import Image from "next/image";
+import { motion, useInView } from "framer-motion";
 import {
   Code,
   Briefcase,
   GraduationCap,
   Laptop,
-  Blocks,
   Cpu,
   Rocket,
   CloudCog,
@@ -69,8 +69,6 @@ export default function HomePage() {
 }
 
 function Portfolio() {
-  const { scrollYProgress } = useScroll();
-
   return (
     <div className="bg-gray-900 scroll-smooth text-white">
       {/* About Me Section */}
@@ -95,14 +93,14 @@ function Portfolio() {
             Computer Engineering graduate with a growing passion for Artificial
             Intelligence, Machine Learning, and cutting-edge retrieval systems
             like Retrieval-Augmented Generation (RAG). At the University of
-            Ottawa, I've contributed to real-world solutions by developing
+            Ottawa, I&apos;ve contributed to real-world solutions by developing
             intelligent, accessible web applications using React, Flask, and
             OpenLayers, and working with geospatial data via PostGIS and
             Geoserver.
           </p>
           <p className="text-gray-300 mb-6 text-lg">
             Driven by a deep curiosity for how intelligent systems can enhance
-            decision-making and human interaction, I've begun integrating
+            decision-making and human interaction, I&apos;ve begun integrating
             machine learning techniques into my projects and exploring how RAG
             can power next-generation AI applications. My multidisciplinary
             experience—from cloud systems to frontend development—gives me a
@@ -478,7 +476,7 @@ function BlurredNavbar({
           {/* Logo/Brand */}
           <div className="flex-shrink-0">
             {logoUrl ? (
-              <img src={logoUrl} alt={brand} className="h-8 w-auto" />
+              <Image src={logoUrl} alt={brand} className="h-8 w-auto" />
             ) : (
               <span className={`text-xl font-bold ${textColor}`}>{brand}</span>
             )}

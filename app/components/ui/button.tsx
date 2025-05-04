@@ -1,5 +1,4 @@
 // components/ui/button.tsx
-import { ReactNode } from "react";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "default" | "outline";
