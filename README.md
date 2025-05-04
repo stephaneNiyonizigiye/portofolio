@@ -16,7 +16,7 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-A preview is available at  [stephaneniyonizigiye.github.io/portofolio]
+A preview is available at  https://stephaneniyonizigiye.github.io/portofolio
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
